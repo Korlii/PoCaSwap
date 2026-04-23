@@ -108,32 +108,30 @@
                 <a href="shop.php"><button class="buy-now">Buy Now!</button></a>
             </div>
             <div class="recently-viewed-right">
-        <?php endif; ?>
-
-        <?php
-            if (!empty($recently_viewed)) {
-                $placeholders = implode(',', array_fill(0, count($recently_viewed), '?'));
-                
-                // Safe prepared statement
-                $stmt = $con->prepare(
-                    "SELECT * FROM products 
-                     WHERE Product_ID IN ($placeholders)
-                     ORDER BY FIELD(Product_ID, " . implode(',', $recently_viewed) . ")"
-                );
-                
-                $stmt->bind_param(str_repeat('i', count($recently_viewed)), ...$recently_viewed);
-                $stmt->execute();
-                $result = $stmt->get_result();
-                
-                while ($row = $result->fetch_assoc()) {
-                    echo "<a class='product' href='product.php?id={$row['Product_ID']}'>";
-                    echo "<img src='products/{$row['Product_Image']}' width='100'>";
-                    echo "<p><strong>{$row['Photocard_Title']}</strong></p>";
-                    echo "</a>";
-                }
-            }
-        ?>
+                <?php
+                    $placeholders = implode(',', array_fill(0, count($recently_viewed), '?'));
+                    
+                    // Safe prepared statement
+                    $stmt = $con->prepare(
+                        "SELECT * FROM products 
+                         WHERE Product_ID IN ($placeholders)
+                         ORDER BY FIELD(Product_ID, " . implode(',', $recently_viewed) . ")"
+                    );
+                    
+                    $stmt->bind_param(str_repeat('i', count($recently_viewed)), ...$recently_viewed);
+                    $stmt->execute();
+                    $result = $stmt->get_result();
+                    
+                    while ($row = $result->fetch_assoc()) {
+                        echo "<a class='product' href='product.php?id={$row['Product_ID']}'>";
+                        echo "<img src='products/{$row['Product_Image']}' style='width:100%; border-radius:12px;'>";
+                        echo "<p><strong>{$row['Photocard_Title']}</strong></p>";
+                        echo "</a>";
+                    }
+                ?>
+            </div>
         </section>
+        <?php endif; ?>
 
         <section class="shop-swap">
             <div class="shop-swap-left">

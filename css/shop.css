@@ -1,12 +1,14 @@
 /* General styles */
 @import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Climate+Crisis&family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 body {
-    font-family: 'Changa One';
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
     background: #f9f9f9;
+    color: #333;
 }
 
 .hero-container img{
@@ -17,13 +19,13 @@ body {
 }
 
 .products-display {
-    font-family: 'Dela Gothic One';
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: linear-gradient(to bottom right, #5CBDFB, #E44093);
-    padding: 30px 0 30px 0;
+    padding: 40px 20px;
 }
 
 .filter-container {
@@ -32,39 +34,37 @@ body {
 }
 
 .filter-container label {
-    font-family: 'Dela Gothic One';
-    font-size: 20px;
-    font-weight: normal;
-    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 15px;
     color: white;
 }
 
 #tradable {
-    font-family: 'Dela Gothic One';
-    font-weight: normal;
-    padding: 8px 12px;
-    font-size: 20px;
-    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     background-color: white;
     color: #333;
     cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
 }
 
 #tradable option {
-    font-family: 'Dela Gothic One';
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    font-weight: normal;
 }
 
 .container {
-    font-family: 'Dela Gothic One';
+    font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
+    gap: 40px;
     max-width: 900px;
     margin: auto;
     justify-content: center;
@@ -73,17 +73,19 @@ body {
 
 .product-card {
     background: white;
-    border-radius: 8px;
-    box-shadow: 13px 13px 0px rgba(78, 70, 70, 0.3);
-    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    padding: 15px;
     text-align: center;
     width: 250px;
-    height: 420px;
-    transition: transform 0.3s ease-in-out;
+    height: auto;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .product-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
     cursor: pointer;
 }
 
@@ -106,16 +108,18 @@ body {
 }
 
 .product-title {
-    padding: 10px 25px 10px 25px;
-    font-size: 14px;
-    font-weight: normal;
+    padding: 15px 15px 5px 15px;
+    font-size: 16px;
+    font-weight: 600;
     text-align: left;
+    color: #333;
 }
 
 .product-price {
-    padding-left: 25px;
-    color: #282EA0;
+    padding: 0 15px;
+    color: #df2582;
     font-size: 14px;
+    font-weight: 500;
     text-align: left;
 }
 

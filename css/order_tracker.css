@@ -1,11 +1,12 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
     body {
         background: linear-gradient(to bottom left, #E44093, #5A21A5);
         background-attachment: fixed; 
-        font-family: "Changa One", sans-serif;
+        font-family: 'Poppins', sans-serif;
         margin: 0;
         padding: 0;
+        color: #333;
     }
 
     
@@ -23,59 +24,62 @@
     }
 
     .toggle-btn {
-        font-family: 'Changa One', sans-serif;
+        font-family: 'Poppins', sans-serif;
         border: none;
-        padding: 20px 26px;
-        font-size: 20px;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: 500;
         color: #5a21a5;
         text-transform: uppercase;
         border-radius: 20px;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
-        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .toggle-btn:hover {
-        background: #000;
-        color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     }
 
 /* General Table Styling */
 table {
-    margin: auto; 
+    margin: 30px auto 60px auto; 
     border-collapse: collapse;
     border-radius: 12px;
     overflow: hidden;
-    margin: 30px 0 90px 0;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); 
-    border: 2px solid #6d1b7b;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    width: 90%;
+    max-width: 1000px;
 }
 
 th, td {
-    padding: 20px 40px;
+    padding: 15px 20px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
-    font-size: 20px;
-    border: 1px solid #6d1b7b;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
 }
 
 th {
-    background-color: #6d1b7b; 
-    color: white;
-    font-size: 20px;
+    background-color: #f8f9fa; 
+    color: #5a21a5;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 tr:nth-child(even) {
-    background-color: #f8f1fa;
+    background-color: #fafafa;
 }
 
 tr:nth-child(odd) {
-    background-color: #9c86a1; 
+    background-color: #ffffff; 
 }
 
 tr:hover {
-    background-color: #e6d5ee; 
-    transition: background 0.3s ease-in-out;
+    background-color: #f4f9ff; 
+    transition: background 0.2s ease-in-out;
 }
 
 /* Image Styling */
@@ -87,7 +91,7 @@ td img {
 }
 
 h2 {
-    font-size: 35px;
-    font-weight: bold;
-    margin: 80px 0 40px 0;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 40px 0 20px 0;
 }

@@ -1,17 +1,25 @@
 /* General styles */
 @import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Climate+Crisis&family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 body {
-    font-family: 'Changa One';
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    color: #333;
+}
+
+h2,
+h3 {
+    font-family: 'Changa One', sans-serif;
+    letter-spacing: 0.5px;
 }
 
 /* Banner styles */
 .banner img {
     width: 100%;
-    height: 600px; 
+    max-height: 500px;
     object-fit: cover;
     display: block;
 }
@@ -19,30 +27,33 @@ body {
 /* Card collection styles */
 .card-collection {
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
     background: linear-gradient(135deg, #E7ACC5 0%, #A3C5D9 50%, #9080BD 100%);
-    font-family: 'Changa One'
 }
 
 .card-collection h2 {
     color: #5A21A5;
-    font-size: 48px;
-    margin-bottom: 40px;
+    font-size: 32px;
+    margin-bottom: 30px;
 }
 
 .cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .card {
-    padding: 10px;
-    border-radius: 10px;
+    padding: 15px;
+    border-radius: 12px;
     text-align: center;
-    width: 230px;
-    font-family: 'Changa One'
+    width: 200px;
+    background: transparent;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease-out, border 0.3s ease-out;
 }
 
 .card img {
@@ -51,66 +62,73 @@ body {
 }
 
 .card p {
-    font-size: 32px;
-    margin-top: 8px;
-    color: #fff;
+    font-size: 16px;
+    margin-top: 15px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 .card img {
     width: 100%;
     border-radius: 50px;
-    transition: transform 0.3s ease-out; 
+    transition: transform 0.3s ease-out;
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .card:hover img {
-    transform: scale(1.1) translateY(-10px); 
-
+    transform: scale(1.05) translateY(-5px);
 }
 
 /* Recently Viewed styles */
 .recently-viewed {
     display: flex;
     width: 100%;
-    min-height: 700px; 
+    flex-wrap: wrap;
 }
 
 /* Left side (Pink) */
 .recently-viewed-left {
     flex: 1;
+    min-width: 300px;
     background-color: #E68A96;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 50px;
+    padding: 80px 40px;
 }
 
 .recently-viewed-left h2 {
-    font-size: 64px;
+    font-size: 36px;
     color: #5A21A5;
     margin-bottom: 20px;
 }
 
 .recently-viewed-left .icon {
-    width: 390px;
-    margin-bottom: 20px;
+    width: 200px;
+    margin-bottom: 25px;
 }
 
 .buy-now {
-    font-family: 'Changa One';
+    font-family: 'Poppins', sans-serif;
     background-color: #5A21A5;
     color: white;
     border: none;
-    padding: 30px 70px;
-    font-size: 48px;
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: 600;
     border-radius: 50px;
     cursor: pointer;
-    transition: transform 0.3s ease-out; 
+    transition: transform 0.3s ease-out;
 }
 
 .buy-now:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
     background-color: white;
     color: #5A21A5;
 }
@@ -118,12 +136,14 @@ body {
 /* Right side (Yellow) */
 .recently-viewed-right {
     flex: 2;
+    min-width: 300px;
     background-color: #FFE624;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 60px 40px;
 }
 
 .product {
@@ -137,19 +157,22 @@ body {
 }
 
 .product p {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 600;
     color: #5A21A5;
+    margin-top: 10px;
 }
 
 /* Shop Swap styles */
 .shop-swap {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: #5A21A5;
-    padding: 120px 100px;
+    padding: 100px 40px;
     color: white;
+    gap: 80px;
 }
 
 /* Left Section */
@@ -158,81 +181,82 @@ body {
 }
 
 .shop-swap-left h2 {
-    font-size: 64px;
+    font-size: 36px;
     font-weight: bold;
-    padding-bottom: 70px;
+    padding-bottom: 15px;
 }
 
 .shop-swap-left p {
-    font-size: 24px;
-    padding-bottom: 70px;
+    font-size: 16px;
+    padding-bottom: 30px;
+    line-height: 1.6;
 }
 
 /* Button */
 .shop-swap-btn {
-    font-family: 'Changa One';
+    font-family: 'Poppins', sans-serif;
     background-color: white;
     color: #5A21A5;
     border: none;
-    padding: 30px 70px;
-    font-size: 48px;
-    font-weight: bold;
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: 600;
     border-radius: 50px;
     cursor: pointer;
-    transition: transform 0.3s ease-out; 
+    transition: transform 0.3s ease-out;
 }
 
 .shop-swap-btn:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
-/* Right Section */
 .shop-swap-right img {
-    max-width: 550px;
-    border-radius: 50px;
+    max-width: 400px;
+    border-radius: 20px;
 }
 
 
 /* Testimonial styles*/
 .testimonials {
-    height: 600px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
-    padding: 50px;
+    padding: 80px 20px;
     background: linear-gradient(to bottom, #FFE624, #A3C5D9);
 }
 
 .testimonial {
     width: 300px;
-    height: 500px;
     background-color: white;
-    padding: 20px 20px 50px 20px;
-    border-radius: 10px;
+    padding: 30px 25px 50px 25px;
+    border-radius: 12px;
     text-align: center;
     position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 .testimonial p {
-    font-size: 18px;
+    font-size: 16px;
     color: #5A21A5;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+    line-height: 1.6;
 }
 
 .testimonial h3 {
-    font-family: 'Climate Crisis';
-    font-weight: normal;
-    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
     color: #282EA0;
-    margin-bottom: 120px;
+    margin-bottom: 30px;
 }
 
 .testimonial img {
-    width: 130px;
-    height: 130px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     position: absolute;
-    bottom: -60px;
+    bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -241,38 +265,37 @@ body {
 
 .features {
     text-align: center;
-    background: linear-gradient(135deg, #df2582, #3f9bfd);
-    padding: 50px;
+    background: #df2582;
+    padding: 100px 20px;
     color: white;
 }
 
 .features h2 {
-    font-size: 64px;
+    font-size: 36px;
     font-weight: normal;
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-bottom: 60px;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
 }
 
 .feature-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
     max-width: 1100px;
     margin: auto;
 }
 
 .feature-item {
     display: flex;
-    align-items: center; 
-    gap: 15px; 
-    text-align: left; 
+    align-items: center;
+    gap: 15px;
+    text-align: left;
 }
 
 .feature-item img {
-    width: 120px;
+    width: 60px;
     height: auto;
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
 
 .feature-text {
@@ -281,12 +304,14 @@ body {
 }
 
 h3 {
-    font-size: 32px;
-    font-weight: normal;
-    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
 }
 
 p {
-    font-size: 24px;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
 }

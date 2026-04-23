@@ -1,8 +1,9 @@
 /* General styles */
 @import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Climate+Crisis&family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 body{
-    font-family: 'Dela Gothic One';
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -27,9 +28,10 @@ body{
 }
 
 .navbar .logo p{
-    font-family: 'Dela Gothic One';
+    font-family: 'Poppins', sans-serif;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 /* Section for Content */
@@ -70,8 +72,8 @@ body{
 }
 
 .tagline {
-    font-family: 'Changa One';
-    font-size: 24px;
+    font-family: 'Changa One', sans-serif;
+    font-size: 18px;
     color: #FFE624;
 }
 
@@ -80,7 +82,7 @@ body{
     background: white;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 20px 20px 0px rgba(106, 91, 91, 0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     text-align: center;
     position: relative;
     flex: 1;
@@ -125,18 +127,20 @@ input {
 .signup-btn {
     background-color: #5A21A5; 
     color: white; 
-    font-size: 24px; 
-    font-family: 'Dela Gothic One'; 
-    padding: 10px 60px; 
+    font-size: 16px; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    padding: 12px 30px; 
     border: none;
-    border-radius: 10px; 
+    border-radius: 50px; 
     cursor: pointer;
-    transition: transform 0.3s ease-out; 
+    transition: all 0.3s ease-out; 
     margin: 30px;
 }
 
 .signup-btn:hover {
-    transform: scale(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(90, 33, 165, 0.3);
 }
 
 /* Sign-up text */
