@@ -1,0 +1,93 @@
+
+
+    body {
+        background: linear-gradient(to bottom left, #E44093, #5A21A5);
+        background-attachment: fixed; 
+        font-family: "Changa One", sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    .container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        color: #fff;
+        font-weight: normal;
+    }
+
+    .toggle-btn {
+        font-family: 'Changa One', sans-serif;
+        border: none;
+        padding: 20px 26px;
+        font-size: 20px;
+        color: #5a21a5;
+        text-transform: uppercase;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .toggle-btn:hover {
+        background: #000;
+        color: #fff;
+    }
+
+/* General Table Styling */
+table {
+    margin: auto; 
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 30px 0 90px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); 
+    border: 2px solid #6d1b7b;
+}
+
+th, td {
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+    border: 1px solid #6d1b7b;
+}
+
+th {
+    background-color: #6d1b7b; 
+    color: white;
+    font-size: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f1fa;
+}
+
+tr:nth-child(odd) {
+    background-color: #9c86a1; 
+}
+
+tr:hover {
+    background-color: #e6d5ee; 
+    transition: background 0.3s ease-in-out;
+}
+
+/* Image Styling */
+td img {
+    width: 90px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 80px 0 40px 0;
+}

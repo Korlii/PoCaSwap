@@ -1,0 +1,198 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Climate+Crisis&family=Dela+Gothic+One&display=swap');
+
+body {
+  font-family: 'Changa One';
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  background-color: #5A21A5;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Pushes the footer down when content is short */
+section {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers "Your cart is empty." */
+    align-items: center;
+}
+
+/* Cart Section */
+.cart-section {
+    font-family: 'Dela Gothic One';
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cart-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-spacing: 0 10px; 
+    border-collapse: separate; 
+    border: none;
+}
+
+th {
+    color: #FFE624;
+    padding: 12px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+tbody tr {
+    margin-bottom: 10px;
+}
+
+tbody tr td {
+    background-color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+tbody tr td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+tbody tr td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+td:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    text-align: left;
+}
+
+td input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+td img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-container a,
+.quantity-container span {
+    border: 1px solid black;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    margin: 0; /* Remove margin */
+}
+
+.quantity-container a:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.quantity-container span {
+    border-left: none;
+    border-right: none;
+}
+
+.quantity-container a:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.delete-btn {
+    border: none;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+td a:hover {
+    color: #007bff;
+}
+
+td a[href*="remove"] {
+    color: red;
+    font-weight: bold;
+}
+
+.total-container {
+    display: flex;
+    justify-content: center; 
+}
+
+.total-price {
+    text-align: center;
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout-btn, .clear-cart {
+    font-family: 'Dela Gothic One';
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: normal;
+    cursor: pointer;
+    margin: 10px 50px 10px 50px;
+    transition: transform 0.3s ease-out; 
+}
+
+.checkout-btn {
+    background: green;
+    color: white;
+    border: none;
+}
+
+.checkout-btn:hover, .clear-cart:hover{
+    transform: scale(1.1);
+}
+
+.checkout-btn:hover {
+    background: darkgreen;
+}
+
+.clear-cart {
+    background: red;
+    color: white;
+}
+
+.clear-cart:hover {
+    background: darkred;
+}
+
+.cart-empty{
+    padding-bottom: 100px;
+}

@@ -1,0 +1,251 @@
+.tab-content { 
+    display: none; 
+}
+
+.active-tab { 
+    display: block; 
+}
+
+body {
+    background: linear-gradient(to bottom left, #E7ACC5, #A3C5D9, #9080BD);
+    background-attachment: fixed; 
+    font-family: 'Dela Gothic One', sans-serif;
+    color: #d84d96;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    background: #5a21a5;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    padding-left: 50px;
+}
+
+.title {
+    font-family: 'Climate Crisis', sans-serif;
+    color: #FFE624;
+    font-size: 25px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Changa One', sans-serif;
+}
+
+.nav a:last-child {
+    padding-right: 20px;
+}
+
+.nav a:hover {
+    color: #d84d96;
+    transform: translateY(-3px);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Container styling */
+.status {
+    display: flex;
+    gap: 10px; /* Spacing between buttons */
+    flex-wrap: wrap; /* Ensure responsiveness */
+    justify-content: center;
+    padding: 20px;
+}
+
+/* General button styling */
+.status button {
+    font-family: 'Changa One', sans-serif;
+    border: none;
+    padding: 20px 26px;
+    font-size: 20px;
+    color: #5a21a5;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Colors - Customize per status */
+.status button[id^="pending"] { 
+    background: #f39c12; 
+}
+.status button[id^="ongoing"] { 
+    background: #27ae60; 
+}
+.status button[id^="completed"] { 
+    background: #27ae60; 
+}
+.status button[id^="cancelled"] { 
+    background: #e74c3c; 
+}
+
+/* Hover Effect */
+.status button:hover {
+    color: #5CBDFB;
+
+}
+
+/* Active Click Effect */
+.status button:active {
+    transform: scale(0.95);
+}
+
+table {
+    align-items: center;
+    border-collapse: collapse;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+th, td {
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+th {
+    background-color: #6d1b7b; 
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f1fa;
+}
+
+tr:nth-child(odd) {
+    background-color: #704b79; 
+}
+
+tr:hover {
+    background-color: #e6d5ee; 
+    transition: background 0.3s ease-in-out;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25); 
+}
+
+.check_details {
+    background-color: #fefefe;
+    display: flex;
+    text-align: center;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 10rem;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+}
+
+select {
+    font-family: 'Dela Gothic One', sans-serif;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #5a21a5;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #3da51a; 
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"]:hover {
+    background-color: #9bc78c; 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button[name="orderID"] {
+    font-family: 'Changa One', sans-serif;
+    background-color: #fdf146; 
+    color: #d84d96;
+    border: none;
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #6d1b7b;
+    padding: 40px 0 0 0;
+    font-size: 30px;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 220px;
+}

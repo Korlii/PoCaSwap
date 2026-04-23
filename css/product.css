@@ -1,0 +1,208 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Climate+Crisis&family=Dela+Gothic+One&display=swap');
+
+body {
+  font-family: 'Changa One';
+  margin: 0;
+  padding: 0;
+  
+}
+
+.photocard-section {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #5CBDFB, #E44093);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+
+.photocard-container {
+    font-family: 'Dela Gothic One';
+    padding: 0px 30px 30px 30px;
+    background-color: white;
+    border-radius: 20px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 0px rgba(78, 70, 70, 0.3);
+}
+
+.photocard-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.photocard-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    max-height: 500px;
+    background-color: #EAEAEA;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.photocard-img img{
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.photocard-desc {
+    max-width: 550px;
+    padding: 30px;
+}
+
+.photocard-desc h1 {
+    max-width: 300px;
+    min-width: 300px;
+    width: 100%;
+    text-align: left;
+    font-weight: normal;
+}
+
+.photocard-price {
+    font-family: 'Dela Gothic One';
+    color: #5A21A5;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.photocard-desc h2 {
+    text-align: left;
+    color: #9D9D9D;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.photocard-desc-text {
+    margin-top: 0;
+    font-family: 'Changa One';
+    max-width: 300px;
+    min-width: 300px;
+    width: 100%;
+    overflow: hidden;
+    display: block; 
+    white-space: normal;
+    overflow-wrap: break-word;
+    font-size: 16px;
+}
+
+.photocard-bottom {
+    flex-direction: column;
+}
+
+.quantity-label {
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: normal;
+    color: #9D9D9D;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.quantity-picker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.quantity-picker input {
+    width: 70px;
+    height: 27px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.quantity-btn {
+    font-family: 'Changa One';
+    color: #9D9D9D;
+    width: 40px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.button-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    
+}
+
+.buy-btn {
+    background-color: #E44093; 
+    color: white; 
+    font-size: 20px; 
+    font-family: 'Dela Gothic One'; 
+    padding: 10px 30px; 
+    border: none;
+    margin-left: 27px;
+    border-radius: 40px; 
+    cursor: pointer;
+    transition: transform 0.3s ease-out; 
+}
+
+.buy-btn:hover {
+    transform: scale(1.1);
+}
+
+.add-cart-btn {
+    background-color: #5CBDFB; 
+    color: white; 
+    font-size: 20px; 
+    font-family: 'Dela Gothic One'; 
+    padding: 10px 30px; 
+    border: none;
+    border-radius: 40px; 
+    cursor: pointer;
+    transition: transform 0.3s ease-out; 
+}
+
+.add-cart-btn:hover {
+    transform: scale(1.1);
+}
+
+.trade-btn {
+    background-color: #5A21A5; 
+    color: white; 
+    font-size: 20px; 
+    font-family: 'Dela Gothic One'; 
+    padding: 10px 30px; 
+    border: none;
+    border-radius: 40px; 
+    cursor: pointer;
+    transition: transform 0.3s ease-out; 
+}
+
+.trade-btn:hover {
+    transform: scale(1.1);
+}
+
+.added-cart-alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-message {
+    color: #5A21A5;
+    font-size: 14px;
+    margin-top: 10px;
+}

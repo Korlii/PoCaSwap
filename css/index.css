@@ -1,0 +1,292 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Climate+Crisis&family=Dela+Gothic+One&display=swap');
+
+body {
+    font-family: 'Changa One';
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Banner styles */
+.banner img {
+    width: 100%;
+    height: 600px; 
+    object-fit: cover;
+    display: block;
+}
+
+/* Card collection styles */
+.card-collection {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #E7ACC5 0%, #A3C5D9 50%, #9080BD 100%);
+    font-family: 'Changa One'
+}
+
+.card-collection h2 {
+    color: #5A21A5;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 230px;
+    font-family: 'Changa One'
+}
+
+.card img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.card p {
+    font-size: 32px;
+    margin-top: 8px;
+    color: #fff;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 50px;
+    transition: transform 0.3s ease-out; 
+}
+
+.card:hover img {
+    transform: scale(1.1) translateY(-10px); 
+
+}
+
+/* Recently Viewed styles */
+.recently-viewed {
+    display: flex;
+    width: 100%;
+    min-height: 700px; 
+}
+
+/* Left side (Pink) */
+.recently-viewed-left {
+    flex: 1;
+    background-color: #E68A96;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.recently-viewed-left h2 {
+    font-size: 64px;
+    color: #5A21A5;
+    margin-bottom: 20px;
+}
+
+.recently-viewed-left .icon {
+    width: 390px;
+    margin-bottom: 20px;
+}
+
+.buy-now {
+    font-family: 'Changa One';
+    background-color: #5A21A5;
+    color: white;
+    border: none;
+    padding: 30px 70px;
+    font-size: 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out; 
+}
+
+.buy-now:hover {
+    transform: scale(1.1); 
+    background-color: white;
+    color: #5A21A5;
+}
+
+/* Right side (Yellow) */
+.recently-viewed-right {
+    flex: 2;
+    background-color: #FFE624;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    text-align: center;
+    width: 210px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.product p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5A21A5;
+}
+
+/* Shop Swap styles */
+.shop-swap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5A21A5;
+    padding: 120px 100px;
+    color: white;
+}
+
+/* Left Section */
+.shop-swap-left {
+    max-width: 600px;
+}
+
+.shop-swap-left h2 {
+    font-size: 64px;
+    font-weight: bold;
+    padding-bottom: 70px;
+}
+
+.shop-swap-left p {
+    font-size: 24px;
+    padding-bottom: 70px;
+}
+
+/* Button */
+.shop-swap-btn {
+    font-family: 'Changa One';
+    background-color: white;
+    color: #5A21A5;
+    border: none;
+    padding: 30px 70px;
+    font-size: 48px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out; 
+}
+
+.shop-swap-btn:hover {
+    transform: scale(1.1); 
+}
+
+/* Right Section */
+.shop-swap-right img {
+    max-width: 550px;
+    border-radius: 50px;
+}
+
+
+/* Testimonial styles*/
+.testimonials {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+    background: linear-gradient(to bottom, #FFE624, #A3C5D9);
+}
+
+.testimonial {
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    padding: 20px 20px 50px 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.testimonial p {
+    font-size: 18px;
+    color: #5A21A5;
+    margin-bottom: 50px;
+}
+
+.testimonial h3 {
+    font-family: 'Climate Crisis';
+    font-weight: normal;
+    font-size: 20px;
+    color: #282EA0;
+    margin-bottom: 120px;
+}
+
+.testimonial img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Features styles */
+
+.features {
+    text-align: center;
+    background: linear-gradient(135deg, #df2582, #3f9bfd);
+    padding: 50px;
+    color: white;
+}
+
+.features h2 {
+    font-size: 64px;
+    font-weight: normal;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 60px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    text-align: left; 
+}
+
+.feature-item img {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0; 
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 24px;
+    line-height: 1.5;
+}

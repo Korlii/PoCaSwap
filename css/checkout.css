@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Climate+Crisis&family=Dela+Gothic+One&display=swap');
+
+body {
+    font-family: 'Dela Gothic One';
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #6A5B5B;
+}
+
+.p {
+    text-align: center;
+}
+
+h4 {
+    font-size: 1rem;
+    color: #000000;
+    margin: auto;
+}
+
+h5 {
+    font-size: 1.25rem;
+    margin: auto;
+}
+
+.receipt {
+    display: block;
+    padding: 1.5rem;
+    height: 840px;
+    width: 500px;
+    background-color: #FFFFFF;
+    margin: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+    border-radius: 2rem;
+}
+
+
+.pmf{
+    margin: auto;
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.pmfr{
+    display: inline-flex;
+    width: 15.6rem;
+    height: 3rem;
+}
+
+.pmfr input {
+    visibility:hidden; 
+    width:0;
+}
+
+.pmfr label {
+    color: #000000;
+    width: 14rem;
+    height: 4rem;
+    flex-shrink: 0;
+    border-radius: 2.5rem;
+    background: #EDF2F3;
+    text-align: center;
+    line-height: 200%;
+    font-size: .9rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.pmfr label:hover {
+    color: #AFD8F2;
+}
+
+.pmfr input:checked + label {
+    flex-shrink: 0;
+    border-radius: 2.5rem;
+    background: #5289B5;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+.prod-ord {
+    width: 90%;
+    height: 10rem;
+    margin: auto;
+    overflow-y: auto;
+    border: 1px solid #5289B5;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.prod-ord strong {
+    margin: auto;
+    float: right;
+}
+
+.mop {
+    width: 90%;
+    display: inline-flex;
+}
+
+.po-btn {
+    margin: auto;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+
+.place_order {
+    background: #FFE624;
+    border: none;
+    width: 24rem;
+    height: 4.25rem;
+    font-family: 'Dela Gothic One';
+    font-size: 2rem;
+    color: #FFFFFF;
+    border-radius: 2rem;
+}
+
+.pm {
+    accent-color: #FFE624;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    box-shadow: none;
+    outline-style: none;
+    border: 0;
+}
+
+.back {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-top:2rem;
+    display: block;
+    width: 9rem;
+}

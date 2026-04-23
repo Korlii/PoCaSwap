@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: Changa One, sans-serif;
+    text-align: center;
+    background: #d84d96;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #5a21a5;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    padding-left: 50px;
+}
+
+.title {
+    font-family: 'Climate Crisis', sans-serif;
+    color: #FFE624;
+    font-size: 25px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav a:last-child {
+    padding-right: 20px;
+}
+
+.nav a:hover {
+    color: #d84d96;
+    transform: translateY(-3px);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+/* Form Container */
+form {
+    background-color: white;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Checkbox */
+label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* File Upload */
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.file-upload label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #511366;
+    cursor: pointer;
+}
+
+.file-upload .upload-icon {
+    font-size: 24px;
+    color: #39d38b;
+}
+
+/* Submit Button */
+button {
+    margin-top: 30px;
+    display: inline-block;
+    width: 150px;
+    text-align: center; 
+    padding: 15px 20px;
+    background-color: #2a8f3b;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #511366;
+    color: white;
+    cursor: pointer;
+}

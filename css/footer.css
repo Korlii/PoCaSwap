@@ -1,0 +1,77 @@
+/* Footer styles */
+.footer {
+    background: black;
+    color: white;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-center h2 {
+    font-family: 'Climate Crisis';
+    font-weight: normal;
+    font-size: 32px;
+    color: #FFE624; 
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+.footer-center p {
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* Bottom section: Links & Socials */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Left Section */
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-left ul li {
+    margin-bottom: 5px;
+}
+
+.footer-left ul li a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-left ul li a:hover {
+    color: #FFE624;
+}
+
+/* Right Section */
+.footer-right {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-right img {
+    width: 40px;
+    height: 40px;
+}

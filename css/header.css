@@ -1,0 +1,87 @@
+/* Header styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #ff69b4;
+    padding: 10px 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex: 1; 
+    justify-content: flex-start; 
+}
+
+.navbar .logo {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .logo img {
+    height: 100px;
+}
+
+.profile {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logout-btn {
+    background-color: #ff69b4;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.logout-img {
+    width: 50px; 
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-size: 20px; 
+}
+
+.nav-links li:hover {
+    transform: translateY(-3px);
+}
+
+.nav-links a:hover {
+    color: #5A21A5;
+}
+
+.profile a {
+    text-decoration: none;
+    color: #8bd2ff;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px; 
+    padding-right: 40px;
+}
+
+.profile img {
+    height: 50px;
+    margin-right: 10px;
+}

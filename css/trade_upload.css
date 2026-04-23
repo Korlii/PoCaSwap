@@ -1,0 +1,167 @@
+/* Global Styles */
+body {
+    font-family: 'Changa One', sans-serif;
+    background: linear-gradient(to bottom, #f05aa5, #5a9cf0);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.trade-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+/* Trade Offer Box */
+.trade-offer, .trade-product {
+    background: white;
+    color: black;
+    flex: 1;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    min-height: 350px;
+    text-align: left;
+}
+
+/* Headings */
+.trade-offer h3, .trade-product h3 {
+    color: #5A21A5;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Form Inputs */
+.trade-offer label {
+    display: block;
+    color: #5A21A5;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Upload Image Input */
+.trade-offer input[type="file"] {
+    background: #ff69b4;
+    padding: 15px 10px; 
+    width: 100%; 
+    max-width: 400px; 
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    display: block; 
+}
+
+/* Optional: Hover effect */
+.trade-offer input[type="file"]:hover {
+    background: #ff4d9a;
+}
+
+
+/* Trade Preview Box */
+.trade-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Preview Image */
+.trade-product img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Trade Button */
+.trade-btn {
+    display: block; 
+    margin: 20px auto; 
+    font-family: 'Dela Gothic One', sans-serif;
+    background: #5A21A5;
+    color: white;
+    padding: 12px 50px; 
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    width: fit-content;
+    min-width: 120px; 
+}
+
+/* Hover Effect */
+.trade-btn:hover {
+    background: white;
+    color: #5A21A5;
+    transform: translateY(-3px);
+    transition: 0.3s ease;
+}
+
+
+.trade-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Left: Trade Offer Form */
+.trade-offer {
+    background: white;
+    color: #f05aa5;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 40%;
+    min-height: 350px;
+}
+
+.trade-offer form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trade-offer input,
+.trade-offer textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Right: Requested Product */
+.trade-request {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 40%;
+    min-height: 350px;
+    text-align: center;
+}
+
+.requested-product img {
+    width: 230px;
+    height: 365px; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.requested-product p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+

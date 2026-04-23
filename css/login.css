@@ -1,0 +1,151 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Climate+Crisis&family=Dela+Gothic+One&display=swap');
+
+body{
+    font-family: 'Dela Gothic One';
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #ff69b4;
+    padding: 10px 100px;
+}
+
+.navbar .logo {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 100px;
+}
+
+.navbar .logo p{
+    font-family: 'Dela Gothic One';
+    color: white;
+    font-size: 20px;
+}
+
+/* Section for Content */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #E7ACC5 0%, #A3C5D9 50%, #9080BD 100%);
+    padding-top: 0px; 
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 1000px;
+    gap: 100px;
+}
+
+/* Left Section */
+.branding {
+    text-align: center;
+    flex: 1;
+}
+
+.cards {
+    width: 300px;
+}
+
+.logo-text {
+    font-family: 'Climate Crisis';
+    font-size: 40px;
+    font-weight: normal;
+    color: white;
+}
+
+.tagline {
+    font-family: 'Changa One';
+    font-size: 24px;
+    color: #FFE624;
+}
+
+/* Right Section */
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 20px 20px 0px rgba(106, 91, 91, 0.3);
+    text-align: center;
+    position: relative;
+    flex: 1;
+}
+
+.login-text {
+    display: block;  
+    text-align: left; 
+    margin-bottom: 20px; 
+}
+
+/* Top Circle */
+.login-circle {
+    width: 60px;
+    height: 60px;
+    background: #E44093;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid white;
+}
+
+/* Login Title */
+.login-title {
+    font-size: 24px;
+    color: #E44093;
+}
+
+/* Form Styling */
+
+input {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.login-btn {
+    background-color: #E44093; 
+    color: white; 
+    font-size: 24px; 
+    font-family: 'Dela Gothic One'; 
+    padding: 10px 60px; 
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: transform 0.3s ease-out; 
+    margin: 30px;
+}
+
+.login-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Sign-up text */
+p {
+    margin-top: 10px;
+}
+
+p a {
+    color: #E44093;
+    text-decoration: none;
+    font-weight: bold;
+}

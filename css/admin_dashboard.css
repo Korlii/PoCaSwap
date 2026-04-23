@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Changa One, sans-serif;
+    text-align: center;
+    background: #d84d96;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #5a21a5;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    padding-left: 50px;
+}
+
+.title {
+    font-family: 'Climate Crisis', sans-serif;
+    color: #FFE624;
+    font-size: 25px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav a:last-child {
+    padding-right: 20px;
+}
+
+.nav a:hover {
+    color: #d84d96;
+    transform: translateY(-3px);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.main-container {
+    display: flex;
+    height: 74vh;
+}
+
+.welcome {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #d84d96;
+    color: #000000;
+    font-size: 30px;
+    padding: 40px;
+    text-align: left;
+}
+
+.options {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #E7ACC5, #A3C5D9, #9080BD);
+    height: 100%;
+    padding: 50px;
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    background: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+}
+
+.button:hover {
+    color: white;
+}
+
+
+.btn-products {
+    color: #5A21A5;
+}
+
+.btn-orders {
+    color: #282EA0;
+}
+
+.btn-trades {
+    color: #E44093;
+}
+
+.btn-products:hover {
+    background: #5A21A5;
+}
+
+.btn-orders:hover {
+    background: #282EA0;
+}
+
+.btn-trades:hover {
+    background: #E44093;
+}
+
