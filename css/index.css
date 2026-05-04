@@ -41,9 +41,12 @@ h3 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
-    max-width: 1400px;
+    gap: 20px;
+    max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
 }
 
 .card {
@@ -54,6 +57,7 @@ h3 {
     background: transparent;
     border: 2px solid transparent;
     transition: transform 0.3s ease-out, border 0.3s ease-out;
+    box-sizing: border-box;
 }
 
 .card img {
@@ -90,7 +94,6 @@ h3 {
     flex-wrap: wrap;
 }
 
-/* Left side (Pink) */
 .recently-viewed-left {
     flex: 1;
     min-width: 300px;
@@ -101,66 +104,92 @@ h3 {
     justify-content: center;
     text-align: center;
     padding: 80px 40px;
+    box-sizing: border-box;
 }
 
 .recently-viewed-left h2 {
     font-size: 36px;
-    color: #5A21A5;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 }
 
 .recently-viewed-left .icon {
     width: 200px;
     margin-bottom: 25px;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.1));
 }
 
 .buy-now {
     font-family: 'Poppins', sans-serif;
-    background-color: #5A21A5;
+    background: rgba(255, 255, 255, 0.2);
     color: white;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
     padding: 12px 40px;
     font-size: 18px;
     font-weight: 600;
     border-radius: 50px;
     cursor: pointer;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, background 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .buy-now:hover {
-    transform: scale(1.1);
-    background-color: white;
+    transform: scale(1.05);
+    background: white;
     color: #5A21A5;
 }
 
-/* Right side (Yellow) */
+/* Right side */
 .recently-viewed-right {
     flex: 2;
     min-width: 300px;
-    background-color: #FFE624;
+    background-color: #5A21A5;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
     padding: 60px 40px;
+    box-sizing: border-box;
 }
 
 .product {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+    padding: 15px;
     text-align: center;
     width: 210px;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 45px rgba(31, 38, 135, 0.3);
 }
 
 .product img {
     width: 100%;
-    border-radius: 20px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 .product p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
-    color: #5A21A5;
-    margin-top: 10px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Shop Swap styles */
@@ -314,4 +343,99 @@ p {
     font-size: 16px;
     line-height: 1.6;
     margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .feature-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .shop-swap {
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .shop-swap-right img {
+        max-width: 100%;
+    }
+
+    .recently-viewed {
+        flex-direction: column;
+    }
+
+    .recently-viewed-left,
+    .recently-viewed-right {
+        width: 100%;
+        padding: 40px 20px;
+        border-right: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner img {
+        max-height: 300px;
+    }
+
+    .card-collection {
+        padding: 40px 10px;
+    }
+
+    .cards {
+        gap: 15px;
+        padding: 10px 15px;
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+        padding: 10px;
+    }
+
+    .card p {
+        font-size: 13px;
+        line-height: 1.4;
+        margin-top: 10px;
+    }
+
+    .recently-viewed-right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 30px 15px;
+    }
+
+    .recently-viewed-right .product {
+        width: 45%;
+        max-width: none;
+        padding: 10px;
+    }
+
+    .recently-viewed-right .product img {
+        height: 150px;
+    }
+
+    .recently-viewed-right .product p {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .features h2 {
+        font-size: 28px;
+        margin: 0 auto 30px auto;
+    }
+
+    .shop-swap-left h2 {
+        font-size: 28px;
+    }
+
+    .recently-viewed-left h2 {
+        font-size: 28px;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
 }

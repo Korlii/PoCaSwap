@@ -196,3 +196,46 @@ td a[href*="remove"] {
 .cart-empty{
     padding-bottom: 100px;
 }
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .cart-section {
+        width: 95%;
+        padding: 10px;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .checkout-btn, .clear-cart {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    th {
+        font-size: 18px;
+    }
+    td input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+    }
+    td img {
+        width: 40px;
+    }
+    .quantity-container a, .quantity-container span {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+    .checkout-btn, .clear-cart {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+    .total-price {
+        width: 100%;
+    }
+}
+

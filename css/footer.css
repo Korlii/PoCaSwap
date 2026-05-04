@@ -88,3 +88,28 @@
 .footer-right img:hover {
     transform: translateY(-3px);
 }
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .footer {
+        padding: 40px 20px;
+    }
+    .footer-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .footer-center {
+        text-align: center;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-left ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
